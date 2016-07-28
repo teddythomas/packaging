@@ -51,7 +51,7 @@ MYTHTV_CONFIGURE_OPTS +=    --compile-type=$(MYTHTV_COMPILE_TYPE) \
 				--enable-vdpau
 
 ifeq "$(DEB_BUILD_ARCH)" "armhf"
-	MYTHTV_CONFIGURE_OPTS += --disable-opengl-video --disable-vdpau --enable-opengl --enable-opengl-themepainter --disable-vaapi
+	MYTHTV_CONFIGURE_OPTS += --disable-opengl-video --disable-vdpau --enable-opengl --disable-opengl-themepainter --disable-vaapi
 else
 	MYTHTV_CONFIGURE_OPTS += --enable-opengl-video --enable-vaapi
 endif
